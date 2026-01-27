@@ -1,20 +1,9 @@
-import { useState } from 'react'
-
-const App=() => {
-  const [name, setName] = useState('');
+import Inputfield from './components/Inputfield.jsx'
+const App = () =>{
   return (
     <>  
-       <div>
-        <h2>Name</h2>
-        <input value={name}
-         onChange={(event)=> setName(event.target.value)} 
-         placeholder="Type here" />
-       </div>
-       <div>
-        <h2>Your name is: {name}</h2>
-       </div>
+      <Inputfield />
     </>
-  )
-}
-
-export default App
+  );
+};
+export default App;
