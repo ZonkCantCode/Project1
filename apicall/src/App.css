@@ -1,42 +1,97 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+  background-color: #0f172a;
+  /* dark navy */
+  color: #e5e7eb;
+  /* light text */
+}
+
+/* Card container */
+div {
+  max-width: 500px;
+  margin: 30px auto;
+  background-color: #020617;
+  /* dark card */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Headings */
+h1,
+h2 {
   text-align: center;
+  margin-bottom: 15px;
+  color: #f8fafc;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Input */
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background-color: #020617;
+  color: #f8fafc;
+  font-size: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input::placeholder {
+  color: #94a3b8;
 }
 
-.card {
-  padding: 2em;
+input:focus {
+  outline: none;
+  border-color: #6366f1;
 }
 
-.read-the-docs {
-  color: #888;
+/* Buttons */
+button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #6366f1;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #4f46e5;
+}
+
+/* Notes */
+p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  color: #e5e7eb;
+}
+
+/* Delete button */
+p button {
+  background-color: #ef4444;
+}
+
+p button:hover {
+  background-color: #dc2626;
 }
